@@ -11,6 +11,13 @@ public class fullstack {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello from RESTEasy Reactive";
+        return "Hello Nadet";
+    }
+    
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/world")
+    public String helloWorld() {
+    	return "Hello world";
     }
 }
